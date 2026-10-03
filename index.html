@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Emotion Detector</h1>
+    <p>Enter a statement and the system will detect its emotions.</p>
+    <div class="form-group">
+        <textarea class="form-control" id="textToAnalyze" rows="4"
+                  placeholder="Type your text here"></textarea>
+    </div>
+    <button class="btn btn-primary" onclick="RunEmotionDetection()">Run Emotion Detection</button>
+    <h4 id="system_response" style="margin-top: 20px;"></h4>
+</div>
+<script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+</body>
+</html>
